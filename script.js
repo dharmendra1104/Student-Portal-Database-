@@ -1287,5 +1287,9 @@ function menu(arr) {
     let tbody = document.querySelector('tbody')
     let data = d.join("")
     tbody.innerHTML = data
+
+     if (d.length <= 0) {
+        return (tbody.innerHTML = `<p> item not found </p>`)
+    }
 }
 menu(arr)
